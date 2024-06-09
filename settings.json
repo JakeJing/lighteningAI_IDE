@@ -1,0 +1,198 @@
+{
+  "editor.fontSize": 20,
+  "editor.minimap.enabled": false,
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "window.menuBarVisibility": "visible",
+  "workbench.colorTheme": "Lightning Dark",
+  "multiCommand.commands": [
+    {
+      "command": "multicmd.r.go.previous.chunk.center",
+      "sequence": [
+        "r.goToPreviousChunk"
+        // "center-editor-window.center",
+      ]
+    },
+    {
+      "command": "multicmd.r.go.next.chunk.center",
+      "sequence": [
+        "r.goToNextChunk"
+        // "center-editor-window.center"
+      ]
+    },
+    {
+      "command": "multicmd.quarto.go.next.chunk.center",
+      "sequence": [
+        "quarto.goToNextCell"
+        // "center-editor-window.center"
+      ]
+    },
+    {
+      "command": "multicmd.quarto.go.previous.chunk.center",
+      "sequence": [
+        "quarto.goToPreviousCell"
+        // "center-editor-window.center"
+      ]
+    },
+    {
+      "command": "multicmd.r.run.previous.chunk.center",
+      // "interval": 50,
+      "sequence": [
+        "r.goToPreviousChunk",
+        // "center-editor-window.center",
+        "r.runCurrentChunk"
+      ]
+    },
+    {
+      "command": "multicmd.quarto.run.previous.chunk.center",
+      // "interval": 50,
+      "sequence": [
+        "quarto.runPreviousCell"
+        // "center-editor-window.center"
+      ]
+    },
+    {
+      "command": "multicmd.r.run.current.chunk.center",
+      // "interval": 50,
+      "sequence": [
+        "r.runCurrentChunk"
+        // "center-editor-window.center",
+        // "workbench.action.joinAllGroups"
+      ]
+    },
+    {
+      "command": "multicmd.r.go.beginning.chunk.center",
+      "sequence": [
+        "r.selectCurrentChunk",
+        "cursorLeft",
+        "cursorDown"
+        // "center-editor-window.center",
+      ]
+    },
+    {
+      "command": "multicmd.r.go.end.chunk.center",
+      "sequence": [
+        "r.selectCurrentChunk",
+        "cursorRight",
+        "cursorLineStart",
+        "cursorUp"
+        // "center-editor-window.center",
+      ]
+    },
+    {
+      "command": "multicmd.r.run.chunk.move.end",
+      "sequence": ["r.runCurrentChunk", "multicmd.r.go.end.chunk.center"]
+    },
+    {
+      "command": "multicmd.quarto.run.chunk.move.end",
+      "sequence": ["quarto.runCurrentCell", "multicmd.r.go.end.chunk.center"]
+    },
+    {
+      "command": "multicmd.r.run.next.chunk.move.end",
+      // "interval": 50,
+      "sequence": [
+        "r.goToNextChunk",
+        "multicmd.r.go.end.chunk.center",
+        "r.runCurrentChunk"
+      ]
+    },
+    {
+      "command": "multicmd.quarto.run.next.chunk.move.end",
+      // "interval": 50,
+      "sequence": [
+        "quarto.runNextCell"
+        // "center-editor-window.center"
+      ]
+    },
+    {
+      "command": "multicmd.r.focus.editor.center",
+      "sequence": [
+        "workbench.action.focusActiveEditorGroup"
+        // "center-editor-window.center",
+      ]
+    },
+    {
+      "command": "multicmd.r.save.smart.word.selction",
+      "sequence": [
+        "workbench.action.files.save",
+        "editor.action.smartSelect.expand"
+      ]
+    },
+    {
+      "command": "multicmd.py.run.next.chunk.center",
+      "sequence": [
+        "jupyter.gotoNextCellInFile",
+        "jupyter.runcurrentcell",
+        "cursorDown",
+        // "center-editor-window.center",
+        "interactive.scrollToBottom"
+      ]
+    },
+    {
+      "command": "multicmd.py.go.next.chunk.center",
+      "sequence": [
+        "jupyter.gotoNextCellInFile",
+        "cursorDown"
+        // "center-editor-window.center"
+      ]
+    },
+    {
+      "command": "multicmd.find.next.match.center",
+      "sequence": [
+        "actions.find",
+        "cursorDown"
+        // "center-editor-window.center"
+      ]
+    },
+    {
+      "command": "multicmd.py.go.previous.chunk.center",
+      "sequence": [
+        "jupyter.gotoPrevCellInFile",
+        "cursorDown"
+        // "center-editor-window.center"
+      ]
+    },
+    {
+      "command": "multicmd.py.run.current.chunk.center",
+      // "interval": 10,
+      "sequence": [
+        "jupyter.runcurrentcell",
+        // "center-editor-window.center",
+        "interactive.scrollToBottom"
+      ]
+    },
+    {
+      "command": "multicmd.py.run.current.line.move.down",
+      "sequence": [
+        "jupyter.execSelectionInteractive",
+        "cursorDown",
+        "interactive.scrollToBottom"
+      ]
+    },
+    {
+      "command": "multicmd.py.run.current.line.no.move",
+      "sequence": [
+        "jupyter.execSelectionInteractive",
+        "interactive.scrollToBottom"
+      ]
+    },
+    {
+      "command": "multicmd.py.go.beginning.cell",
+      "sequence": [
+        "jupyter.gotoPrevCellInFile",
+        "jupyter.gotoNextCellInFile",
+        "cursorDown"
+        // "center-editor-window.center"
+      ]
+    },
+    {
+      "command": "multicmd.py.go.end.cell",
+      "sequence": [
+        "jupyter.gotoNextCellInFile",
+        "cursorUp"
+        // "center-editor-window.center"
+      ]
+    }
+  ]
+}
