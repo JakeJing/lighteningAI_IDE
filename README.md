@@ -1,5 +1,7 @@
 # lighteningAI_IDE
-This repo includes my settings and preferences for quickly set up lightening AI IDE.
+This repo includes my settings and preferences for quickly set up lightening AI IDE. See also [this repository](https://github.com/JakeJing/vscode-python-config) for detailed configs.
+
+
 
 ## 1. Install Plugins 
 
